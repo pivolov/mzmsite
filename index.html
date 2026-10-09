@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>МЗМ — производство металлопродукции</title>
+    <link rel="icon" href="assets/favicon.svg">
+    <meta name="description" content="Металлопродукция Магнитогорского завода металлообработки: стальная фибра, холоднокатаная лента, проволока, сетка, электроды и метизы. Подбор продукции и расчёт поставки.">
+    <script src="theme-init.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer>
+    </script>
+  </head>
+  <body>
+    <svg class="visual-filters" width="0" height="0" aria-hidden="true" focusable="false">
+      <defs><filter id="catalog-white-key" color-interpolation-filters="sRGB">
+        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -5.315 -17.88 -1.805 0 25" result="white-key"/>
+        <feComposite in="white-key" in2="SourceGraphic" operator="in"/>
+      </filter></defs>
+    </svg>
+    <a class="skip-link" href="#main">К содержанию</a>
+    <header class="header">
+      <a href="#" class="brand" aria-label="МЗМ — главная">
+        <img class="brand-light" src="assets/logo.svg" width="108" height="31" alt="ООО МЗМ">
+        <img class="brand-dark" src="assets/logo-dark.svg" width="108" height="31" alt="" aria-hidden="true">
+      </a>
+      <nav id="navigation" aria-label="Основная навигация">
+        <div class="nav-products">
+          <button class="nav-product-trigger" aria-expanded="false" aria-controls="product-navigation">Продукция <svg class="icon icon-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="nav-dropdown" id="product-navigation" aria-label="Направления продукции">
+            <button data-filter="packing" aria-pressed="false">Упаковка грузов</button>
+            <button data-filter="concrete" aria-pressed="false">Армирование бетона</button>
+            <button data-filter="sheet" aria-pressed="false">Лист и лента</button>
+            <button data-filter="industrial" aria-pressed="false">Промышленная продукция</button>
+            <a class="nav-external" href="https://wolwekplus.ru/" target="_blank" rel="noopener">Wolwek Plus <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4h6v6m0-6L10 14M10 4H4v16h16v-6"/>
+              </svg>
+            </a>
+            <a class="button button-dark nav-all" href="#products" data-catalog-all>Вся продукция <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h16m-6-6 6 6-6 6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <a href="#cases">Кейсы</a>
+        <a href="#production">Галерея</a>
+        <a href="#documents" data-documents>Документы</a>
+        <a href="#faq">FAQ</a>
+        <a href="#about">О нас</a>
+        <a href="#request">Партнёрам</a>
+        <a href="#contacts">Контакты</a>
+        <div class="menu-footer"><span class="eyebrow">Связаться с заводом</span><a class="menu-phone" href="tel:+73519550104">+7 (3519) 55-01-04</a><a href="mailto:oomzm@yandex.ru">oomzm@yandex.ru</a><button class="theme-toggle menu-theme" data-theme-toggle aria-label="Включить тёмную тему" aria-pressed="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="theme-moon" d="M20.6 14A9 9 0 0 1 10 3.4 9 9 0 1 0 20.6 14Z"/><g class="theme-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></g></svg><span>Тёмная тема</span></button></div>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Включить тёмную тему" aria-pressed="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="theme-moon" d="M20.6 14A9 9 0 0 1 10 3.4 9 9 0 1 0 20.6 14Z"/><g class="theme-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></g></svg></button>
+      <a href="#request" class="button button-dark header-cta" data-inquiry>Отправить заявку <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 12h16m-6-6 6 6-6 6"/>
+        </svg>
+      </a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="navigation">
+        <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+          <path class="burger-top" d="M4 7h16"/>
+          <path class="burger-middle" d="M4 12h16"/>
+          <path class="burger-bottom" d="M4 17h16"/>
+        </svg>
+      </button>
+    </header>
+    <button class="menu-backdrop" aria-label="Закрыть меню" tabindex="-1" hidden></button>
+    <main id="main">
+      <section class="intro" id="about">
+        <div class="hero">
+          <div class="hero-picture">
+            <video class="hero-video" autoplay loop muted playsinline preload="metadata" poster="assets/hero-poster.jpg" aria-label="Производство металлопродукции"><source src="assets/hero-ezgif.com-video-to-webm-converter.webm" type="video/webm"></video>
+          </div>
+          <div class="hero-grid" aria-hidden="true">
+            <span class="hero-rule rule-header-top"><i></i><i></i><i></i></span>
+            <span class="hero-rule rule-header-bottom"><i></i><i></i><i></i></span>
+            <span class="hero-rule rule-copy-top"><i></i><i></i><i></i></span>
+            <span class="hero-rule rule-actions-top"><i></i><i></i><i></i></span>
+            <span class="hero-rule rule-actions-bottom"><i></i><i></i><i></i></span>
+            <span class="hero-rail rail-left"></span><span class="hero-rail rail-center"></span><span class="hero-rail rail-right"></span>
+          </div>
+          <div class="hero-copy">
+            <h1>Производим,<br>упаковываем и<br>поставляем<br>металлопродукцию</h1>
+            <p class="hero-description">Магнитогорский завод металлообработки —<br class="hero-desktop-break"> стальная упаковочная лента, фибра, метизы.<br class="hero-desktop-break"> Полный цикл от порезки до упаковки.</p>
+          </div>
+          <div class="hero-bottom">
+            <div class="hero-actions"><a href="#request" class="button button-dark" data-inquiry>Отправить заявку <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a><a href="#products" class="button hero-catalog" data-catalog-all>Вся продукция <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div>
+
+          </div>
+          <button class="hero-pause" data-video-toggle aria-label="Поставить видео на паузу" aria-pressed="false"><span>Поставить на паузу</span><svg class="icon icon-pause" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" aria-hidden="true"><path d="M9 5v14M15 5v14"/></svg></button>
+        </div>
+        <div class="facts">
+          <div class="facts-heading">
+            <h2>Более 20 лет производим <br>металлопродукцию для <br>промышленности</h2>
+            <p>Работаем с 2001 года для промышленной <br>упаковки, строительства и <br>производственных задач</p>
+          </div>
+          <div class="fact-grid">
+            <article class="fact">
+              <strong>25 лет</strong>
+              <p>Опыта в производстве <br>металлопродукции</p>
+              <span class="tiles tiles-1" aria-hidden="true">
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+              </span>
+            </article>
+            <article class="fact">
+              <strong>100+</strong>
+              <p>Сотрудников в <br>штате</p>
+              <span class="tiles tiles-2" aria-hidden="true">
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+              </span>
+            </article>
+            <article class="fact">
+              <strong>90+</strong>
+              <p>Тонн произведено за время <br>работы</p>
+              <span class="tiles tiles-3" aria-hidden="true">
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+              </span>
+            </article>
+            <article class="fact">
+              <strong>6 цехов</strong>
+              <p>В нашем <br>производстве</p>
+              <span class="tiles tiles-4" aria-hidden="true">
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+              </span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="products section" id="products">
+        <div class="products-heading">
+          <h2>Производим продукцию <br>под задачи вашего <br>предприятия</h2>
+          <div>
+            <p>Для упаковки грузов, армирования бетона и <br>производственных задач</p>
+            <a class="button button-gray" href="#products">Вся продукция <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h16m-6-6 6 6-6 6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="filters" aria-label="Направления продукции">
+          <button class="selected" data-filter="all" aria-pressed="true">Все направления</button>
+          <button data-filter="packing" aria-pressed="false">Упаковка грузов</button>
+          <button data-filter="concrete" aria-pressed="false">Армирование бетона</button>
+          <button data-filter="sheet" aria-pressed="false">Лист и лента</button>
+            <button data-filter="industrial" aria-pressed="false">Промышленная продукция</button>
+        </div>
+        <div class="product-grid">
+          <article class="product" data-category="concrete">
+            <button class="product-art" data-product="0" aria-label="Подробнее: Фибра стальная"><span class="square"><svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg></span><img src="assets/catalog/fibra.png" alt="Фибра стальная" width="300" height="300" loading="lazy"></button>
+            <h3>Фибра стальная</h3><p>Для армирования бетона</p>
+          </article>
+          <article class="product" data-category="packing sheet">
+            <button class="product-art" data-product="1" aria-label="Подробнее: Лента холоднокатаная"><span class="square"><svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg></span><img src="assets/catalog/lenta.png" alt="Лента холоднокатаная" width="300" height="300" loading="lazy"></button>
+            <h3>Лента холоднокатаная</h3><p>Для упаковки и производства</p>
+          </article>
+          <article class="product" data-category="industrial">
+            <button class="product-art" data-product="2" aria-label="Подробнее: Проволока"><span class="square"><svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg></span><img src="assets/catalog/provoloka.jpg" alt="Проволока" width="300" height="300" loading="lazy"></button>
+            <h3>Проволока</h3><p>Для промышленных задач</p>
+          </article>
+          <article class="product" data-category="concrete industrial">
+            <button class="product-art" data-product="3" aria-label="Подробнее: Сетка"><span class="square"><svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg></span><img src="assets/catalog/setka.jpg" alt="Сетка" width="300" height="300" loading="lazy"></button>
+            <h3>Сетка</h3><p>Для строительства и производства</p>
+          </article>
+          <article class="product" data-category="industrial">
+            <button class="product-art" data-product="4" aria-label="Подробнее: Электроды"><span class="square"><svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg></span><img src="assets/catalog/elektrody.jpg" alt="Электроды" width="300" height="300" loading="lazy"></button>
+            <h3>Электроды</h3><p>Для сварочных работ</p>
+          </article>
+          <article class="product" data-category="industrial">
+            <button class="product-art" data-product="5" aria-label="Подробнее: Метизы"><span class="square"><svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg></span><img src="assets/catalog/metizy.png" alt="Метизы" width="300" height="300" loading="lazy"></button>
+            <h3>Метизы</h3><p>Крепёж и металлические изделия</p>
+          </article>
+          <article class="product" data-category="packing">
+            <button class="product-art" data-product="6" aria-label="Подробнее: Замок упаковочный"><span class="square"><svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg></span><img src="assets/catalog/zamok.jpg" alt="Замок упаковочный" width="300" height="300" loading="lazy"></button>
+            <h3>Замок упаковочный</h3><p>Для соединения упаковочной ленты</p>
+          </article>
+          <article class="product" data-category="sheet">
+            <button class="product-art" data-product="7" aria-label="Подробнее: Лист х/к"><span class="square"><svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg></span><img src="assets/catalog/list.jpg" alt="Лист х/к" width="300" height="300" loading="lazy"></button>
+            <h3>Лист х/к</h3><p>Холоднокатаный стальной лист</p>
+          </article>
+        </div>
+        <div class="specification">
+          <video class="background-video" autoplay loop muted playsinline preload="metadata" poster="assets/glass-wave-b-poster.jpg" aria-hidden="true">
+            <source src="assets/glass_wave_b-ezgif.com-video-to-webm-converter.webm" type="video/webm">
+          </video>
+          <div>
+            <h2>Есть спецификация? <br>Начнём с неё.</h2>
+            <p>Для упаковки грузов, армирования бетона и <br>производственных задач</p>
+          </div>
+          <a class="button" href="#request" data-inquiry>Отправить спецификацию <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 12h16m-6-6 6 6-6 6"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="production section" id="production">
+        <div class="production-heading">
+          <h2>Наше <br>производство</h2>
+          <p>Порезка, обработка, комплектация и отгрузка <br>собраны в одном производственном контуре.</p>
+          <div class="gallery-controls">
+            <button class="round" data-gallery="-1" aria-label="Предыдущее фото">
+              <svg class="icon icon-left" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m15 5-7 7 7 7"/>
+              </svg>
+            </button>
+            <button class="round" data-gallery="1" aria-label="Следующее фото">
+              <svg class="icon icon-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m9 5 7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery" tabindex="0" aria-label="Фотографии производства. Листайте перетаскиванием или стрелками">
+          <button data-photo="assets/production-1.jpg" aria-label="Увеличить фотографию производства">
+            <img src="assets/production-1.jpg" alt="Обработка металлических деталей">
+          </button>
+          <button data-photo="assets/production-2.jpg" aria-label="Увеличить фотографию оборудования">
+            <img src="assets/production-2.jpg" alt="Производственная линия">
+          </button>
+          <button data-photo="assets/ceh-1-1.jpg" aria-label="Увеличить фотографию: Металлопродукция в цехе">
+            <img src="assets/ceh-1-1.jpg" alt="Металлопродукция в цехе" loading="lazy" draggable="false">
+          </button>
+          <button data-photo="assets/ceh-2-1.jpg" aria-label="Увеличить фотографию: Линия обработки ленты">
+            <img src="assets/ceh-2-1.jpg" alt="Линия обработки ленты" loading="lazy" draggable="false">
+          </button>
+          <button data-photo="assets/ceh-3-1.jpg" aria-label="Увеличить фотографию: Производственное оборудование">
+            <img src="assets/ceh-3-1.jpg" alt="Производственное оборудование" loading="lazy" draggable="false">
+          </button>
+          <button data-photo="assets/sklad.jpg" aria-label="Увеличить фотографию: Склад металлопродукции">
+            <img src="assets/sklad.jpg" alt="Склад металлопродукции" loading="lazy" draggable="false">
+          </button>
+        </div>
+        <div class="gallery-more">
+          <a class="button" href="#production" data-gallery-open>Вся галерея <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 12h16m-6-6 6 6-6 6"/>
+            </svg>
+          </a>
+        </div>
+        <div class="process">
+          <div class="process-copy">
+            <p class="eyebrow">Производственные процессы</p>
+            <h3 id="process-title">Продольная порезка</h3>
+            <p class="process-description">Подготовка металла под нужный <br>типоразмер.</p>
+            <p class="process-metric">
+              <strong>Стальная упаковочная лента</strong>
+              <br>Толщина 0,3–1,0 мм · ширина 9–32 мм</p>
+            <div class="process-tabs" aria-label="Производственный процесс">
+              <button class="selected" data-process="0" aria-pressed="true">Порезка</button>
+              <button data-process="1" aria-pressed="false">Намотка</button>
+              <button data-process="2" aria-pressed="false">Обработка</button>
+            </div>
+          </div>
+          <div class="process-stage">
+            <object id="process-image" data="assets/01-slitting-v2.svg" type="image/svg+xml" aria-label="Схема продольной порезки">
+            </object>
+            <div class="process-toolbar">
+              <span>Схематичное изображение процесса</span>
+              <button class="process-pause" aria-pressed="false">
+                <svg class="icon icon-pause" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 5v14M15 5v14"/>
+                </svg>
+                <span>Остановить анимацию</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits section">
+        <h2>Что получает <br>заказчик?</h2>
+        <div class="benefit-grid">
+          <article>
+            <h3>Все этапы в <br>одном <br>предприятии</h3>
+            <p>Основные процессы <br>сосредоточены на <br>одной площадке</p>
+          </article>
+          <article>
+            <h3>Продукция под <br>ваши <br>требования</h3>
+            <p>Помогаем подобрать <br>подходящие <br>характеристики</p>
+          </article>
+          <article>
+            <h3>Несколько <br>позиций в одном <br>заказе</h3>
+            <p>Комплектуем партии <br>из разных видов <br>продукции одним <br>заказом</p>
+          </article>
+          <article>
+            <h3>Согласованные <br>условия <br>поставки</h3>
+            <p>Заранее определяем <br>сроки, способ <br>отгрузки и комплект <br>документов</p>
+          </article>
+        </div>
+      </section>
+      <section class="order section" id="order">
+        <div class="order-heading">
+          <h2>Как будет выстроена <br>работа с нами?</h2>
+          <p>Каждый этап согласовываем с заказчиком, <br>чтобы характеристики, стоимость и сроки <br>поставки были понятны заранее.</p>
+        </div>
+        <ol class="order-list">
+          <li>
+            <h3>Заявка, звонок или <br>сообщение</h3>
+            <p>Получаем заявку, уточняем номенклатуру, <br>объём и желаемые сроки поставки.</p>
+          </li>
+          <li>
+            <h3>Техническое <br>согласование</h3>
+            <p>Согласовываем характеристики продукции <br>и возможность изготовления под ваши <br>требования.</p>
+          </li>
+          <li>
+            <h3>Расчёт стоимости</h3>
+            <p>Рассчитываем стоимость, определяем <br>сроки и направляем коммерческое <br>предложение.</p>
+          </li>
+          <li>
+            <h3>Согласование заказа</h3>
+            <p>Утверждаем спецификацию, стоимость, <br>сроки и условия оплаты. Оформляем заказ.</p>
+          </li>
+          <li>
+            <h3>Производство и <br>комплектация</h3>
+            <p>Изготавливаем или комплектуем <br>продукцию, проверяем параметры и <br>подготавливаем партию.</p>
+          </li>
+          <li>
+            <h3>Документы и отгрузка</h3>
+            <p>Готовим сопроводительные документы, <br>согласовываем доставку и отгружаем <br>продукцию.</p>
+          </li>
+        </ol>
+      </section>
+      <section class="cases section content-section" id="cases">
+        <div class="section-heading">
+          <h2>От задачи —<br>к готовой поставке</h2>
+          <div>
+            <p>Проекты для промышленной упаковки и производственных задач.</p>
+            <span class="demo-note">Демонстрационные проекты — примеры наполнения</span>
+          </div>
+        </div>
+        <div class="case-list offset-content">
+          <details class="case" open>
+            <summary>
+              <span class="row-number">01</span>
+              <h3>Комплектация партии для упаковки</h3>
+              <span class="square">
+                <svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 4v16M4 12h16"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="case-body">
+              <img src="assets/ceh-1-1.jpg" alt="Металлическая лента в производственном цехе" loading="lazy">
+              <div>
+                <span class="eyebrow">Пример проекта</span>
+                <h4>Одна заявка. Несколько позиций.</h4>
+                <p>Пример комплектации стальной лентой и упаковочными замками. Характеристики, объём и состав партии согласовываются в одной спецификации.</p>
+                <dl>
+                  <div>
+                    <dt>Задача</dt>
+                    <dd>Подобрать совместимые позиции</dd>
+                  </div>
+                  <div>
+                    <dt>Решение</dt>
+                    <dd>Согласовать состав поставки</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </details>
+          <details class="case">
+            <summary>
+              <span class="row-number">02</span>
+              <h3>Подбор фибры для армирования бетона</h3>
+              <span class="square">
+                <svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 4v16M4 12h16"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="case-body">
+              <img src="assets/02-fibra.png" class="case-product" alt="Стальная фибра" loading="lazy">
+              <div>
+                <span class="eyebrow">Пример проекта</span>
+                <h4>Начинаем с технических требований.</h4>
+                <p>Пример запроса на стальную фибру: уточняем параметры, рассматриваем спецификацию и согласовываем условия закупки.</p>
+                <dl>
+                  <div>
+                    <dt>Задача</dt>
+                    <dd>Сопоставить запрос и характеристики</dd>
+                  </div>
+                  <div>
+                    <dt>Решение</dt>
+                    <dd>Подготовить предложение</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </details>
+          <details class="case">
+            <summary>
+              <span class="row-number">03</span>
+              <h3>Стальная лента под заданный типоразмер</h3>
+              <span class="square">
+                <svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 4v16M4 12h16"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="case-body">
+              <img src="assets/ceh-2-1.jpg" alt="Обработка стальной ленты" loading="lazy">
+              <div>
+                <span class="eyebrow">Пример проекта</span>
+                <h4>Параметры определяют процесс.</h4>
+                <p>Пример заказа ленты заданной ширины и толщины. Возможность изготовления подтверждается после технического согласования.</p>
+                <dl>
+                  <div>
+                    <dt>Задача</dt>
+                    <dd>Уточнить типоразмер</dd>
+                  </div>
+                  <div>
+                    <dt>Решение</dt>
+                    <dd>Согласовать спецификацию</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section class="director section content-section" id="team">
+        <div class="director-photo">
+          <img src="assets/director.png" alt="Иванов Игорь Викторович" loading="lazy">
+        </div>
+        <div class="director-copy">
+          <span class="eyebrow">Команда предприятия</span>
+          <h2>За каждой поставкой —<br>люди и производство</h2>
+          <p>Начинаем с вашей задачи. Уточняем требования к продукции и согласовываем характеристики, состав партии и условия поставки.</p>
+          <div class="director-signature">
+            <strong>Иванов Игорь Викторович</strong>
+            <span>Директор</span>
+          </div>
+          <a href="#request" class="button button-dark" data-inquiry>Обсудить сотрудничество <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 12h16m-6-6 6 6-6 6"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="reviews section content-section" id="reviews">
+        <div class="section-heading">
+          <h2>Что важно<br>нашим заказчикам</h2>
+          <div>
+            <p>Понятные условия, внимание к спецификации и связь на каждом этапе.</p>
+            <span class="demo-note">Демонстрационные отзывы — вымышленные имена и тексты</span>
+          </div>
+        </div>
+        <div class="review-grid">
+          <figure>
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>Удобно, когда по одной заявке можно обсудить несколько позиций. Все параметры собрали в спецификацию — дальше не пришлось возвращаться к одним и тем же вопросам.</blockquote>
+            <figcaption>
+              <strong>Алексей К.</strong>
+              <span>Специалист по снабжению · пример отзыва</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>Для нас главное — чтобы предложение точно отвечало техническим требованиям. Здесь сначала уточнили детали, а уже потом перешли к расчёту.</blockquote>
+            <figcaption>
+              <strong>Марина С.</strong>
+              <span>Руководитель закупок · пример отзыва</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>Понравилось, что условия поставки обсудили заранее. Понятно, какие документы нужны и какие вопросы стоит решить до оформления заказа.</blockquote>
+            <figcaption>
+              <strong>Дмитрий Н.</strong>
+              <span>Инженер · пример отзыва</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="news section content-section" id="news">
+        <div class="section-heading">
+          <h2>Новости и<br>материалы</h2>
+          <div class="news-heading-copy"><p>Новости производства, новая продукция и полезные материалы для изучения.</p><button class="button button-gray news-all" data-news-all>Все новости <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button></div>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-picture"><img src="assets/ceh-1-1.jpg" alt="Производство МЗМ" loading="lazy" width="640" height="480"></div>
+            <span class="eyebrow">Новости</span>
+            <h3><button class="news-title" data-article="2">Мы обновили сайт!</button></h3>
+            <p class="news-description">Продукция, производство и документы — теперь в одном месте.</p>
+            <div class="news-meta"><span>Проект публикации</span><svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></div>
+          </article>
+          <article class="news-card">
+            <div class="news-picture"><img src="assets/ceh-2-1.jpg" alt="Производство стальной ленты" loading="lazy" width="640" height="480"></div>
+            <span class="eyebrow">Материалы</span>
+            <h3><button class="news-title" data-article="0">Как подготовить запрос на ленту</button></h3>
+            <p class="news-description">Какие размеры, характеристики и объём указать для расчёта.</p>
+            <div class="news-meta"><span>Проект публикации</span><svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></div>
+          </article>
+          <article class="news-card">
+            <div class="news-picture"><img src="assets/sklad.jpg" alt="Металлопродукция на складе" loading="lazy" width="640" height="480"></div>
+            <span class="eyebrow">Материалы</span>
+            <h3><button class="news-title" data-article="1">Несколько позиций — одна поставка</button></h3>
+            <p class="news-description">Как собрать перечень продукции и согласовать комплектацию.</p>
+            <div class="news-meta"><span>Проект публикации</span><svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></div>
+          </article>
+        </div>
+        <p class="demo-note">Примеры наполнения — материалы будут опубликованы после согласования.</p>
+      </section>
+      <section class="faq section content-section" id="faq">
+        <div class="section-heading">
+          <h2>Вопросы<br>перед закупкой</h2>
+          <p>Основное — о запросе, характеристиках и согласовании заказа.</p>
+        </div>
+        <div class="faq-list offset-content">
+          <details>
+            <summary>Что нужно для расчёта стоимости?<span class="square">
+                <svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 4v16M4 12h16"/>
+                </svg>
+              </span>
+            </summary>
+            <p>Укажите продукцию, требуемые характеристики и объём. Если есть спецификация или чертёж, приложите их к письму. Недостающие данные уточним при обсуждении.</p>
+          </details>
+          <details>
+            <summary>Можно ли обратиться без готовой спецификации?<span class="square">
+                <svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 4v16M4 12h16"/>
+                </svg>
+              </span>
+            </summary>
+            <p>Да. Начните с описания задачи: что нужно упаковать, изготовить или укомплектовать. Требования к продукции обсудим до расчёта.</p>
+          </details>
+          <details>
+            <summary>Когда будут известны сроки поставки?<span class="square">
+                <svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 4v16M4 12h16"/>
+                </svg>
+              </span>
+            </summary>
+            <p>Сроки подтверждаем после уточнения номенклатуры, характеристик и объёма заказа.</p>
+          </details>
+          <details>
+            <summary>Где посмотреть документы и сертификаты?<span class="square">
+                <svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 4v16M4 12h16"/>
+                </svg>
+              </span>
+            </summary>
+            <p>Документы доступны для просмотра и скачивания. Перечень документов для конкретной продукции уточним при запросе.</p>
+            <button class="text-link" data-documents>Открыть документы <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h16m-6-6 6 6-6 6"/>
+              </svg>
+            </button>
+          </details>
+          <details>
+            <summary>Как согласуются оплата и отгрузка?<span class="square">
+                <svg class="icon icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 4v16M4 12h16"/>
+                </svg>
+              </span>
+            </summary>
+            <p>Условия оплаты, способ отгрузки и комплект сопроводительных документов согласовываем при оформлении заказа.</p>
+          </details>
+        </div>
+      </section>
+      <section class="request section content-section" id="request" tabindex="-1" aria-labelledby="request-title">
+        <div class="request-copy">
+          <span class="eyebrow">Запрос на продукцию</span>
+          <h2 id="request-title">Обсудим<br>вашу закупку</h2>
+          <p>Начать можно с вопроса или готовой спецификации. Укажите продукцию, характеристики и объём — обсудим детали.</p>
+          <div class="request-contacts">
+            <a href="tel:+73519550104">+7 (3519) 55-01-04</a>
+            <a href="mailto:oomzm@yandex.ru">oomzm@yandex.ru</a>
+            <span>Пн–Пт · 8:00–17:00</span>
+          </div>
+        </div>
+        <div class="request-form">
+          <form class="inquiry-form">
+            <label>Ваше имя<input name="name" autocomplete="name" required placeholder="Как к вам обращаться">
+            </label>
+            <label>Телефон или email<input name="contact" autocomplete="email" autocapitalize="off" required placeholder="Для связи с вами">
+            </label>
+            <label class="form-message">Задача или спецификация<textarea name="message" rows="4" placeholder="Продукция, характеристики, объём"></textarea>
+            </label>
+            <button class="button button-dark" type="submit">Отправить запрос <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12h16m-6-6 6 6-6 6"/>
+              </svg>
+            </button>
+            <p class="form-note">Запрос откроется в вашей почтовой программе. Спецификацию можно приложить к письму.</p>
+            <p class="form-status" role="status">
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" aria-label="МЗМ — наверх">
+            <img class="footer-logo" src="assets/logo-white.svg" width="140" height="41" alt="ООО МЗМ">
+          </a>
+          <p>Магнитогорский завод<br>металлообработки</p>
+          <span>Производим с 2001 года</span>
+        </div>
+        <div class="footer-contacts">
+          <span class="footer-label">Связаться с нами</span>
+          <a class="footer-phone" href="tel:+73519550104">+7 (3519) 55-01-04</a>
+          <a class="footer-mail" href="mailto:oomzm@yandex.ru">oomzm@yandex.ru</a>
+          <p>455013, Магнитогорск,<br>ул. Лазника, 52</p>
+        </div>
+        <nav class="footer-nav" aria-label="Навигация в подвале">
+          <a href="#products">Продукция</a>
+          <a href="#production">Производство</a>
+          <a href="#cases">Проекты</a>
+          <a href="#faq">FAQ</a>
+          <button data-documents>Документы</button>
+          <a href="#request">Оставить заявку</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ООО «МЗМ»</span>
+        <span>ИНН 7444029903</span>
+        <a href="#">Наверх <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 12h16m-6-6 6 6-6 6"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <dialog id="documents" aria-labelledby="documents-title">
+      <button class="dialog-close" aria-label="Закрыть">
+        <svg class="icon icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18"/>
+        </svg>
+      </button>
+      <h2 id="documents-title">Документы и сертификаты</h2>
+      <div class="document-grid">
+        <a href="assets/SertifikatMZM.jpg" target="_blank" rel="noopener">
+          <img src="assets/SertifikatMZM.jpg" alt="Сертификат МЗМ">
+          <span>Сертификат МЗМ</span>
+        </a>
+        <a href="assets/SertifikatAuditor.jpg" target="_blank" rel="noopener">
+          <img src="assets/SertifikatAuditor.jpg" alt="Сертификат аудитора">
+          <span>Сертификат аудитора</span>
+        </a>
+        <a href="assets/SertifikatP1.jpg" target="_blank" rel="noopener">
+          <img src="assets/SertifikatP1.jpg" alt="Сертификат продукции, страница 1">
+          <span>Сертификат продукции, страница 1</span>
+        </a>
+        <a href="assets/SertifikatP2.jpg" target="_blank" rel="noopener">
+          <img src="assets/SertifikatP2.jpg" alt="Сертификат продукции, страница 2">
+          <span>Сертификат продукции, страница 2</span>
+        </a>
+        <a href="assets/SertifikatRazreshenie.jpg" target="_blank" rel="noopener">
+          <img src="assets/SertifikatRazreshenie.jpg" alt="Разрешение">
+          <span>Разрешение</span>
+        </a>
+      </div>
+    </dialog>
+    <dialog id="lightbox" aria-label="Фотография производства">
+      <button class="dialog-close" aria-label="Закрыть">
+        <svg class="icon icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18"/>
+        </svg>
+      </button>
+      <img src="assets/production-1.jpg" alt="Фотография производства">
+    </dialog>
+    <dialog id="product-dialog" aria-labelledby="product-dialog-title">
+      <button class="dialog-close" aria-label="Закрыть">
+        <svg class="icon icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18"/>
+        </svg>
+      </button>
+      <img src="assets/05-provoloka.png" alt="Продукция">
+      <h2 id="product-dialog-title">Стальная упаковочная лента</h2>
+      <p>ГОСТ 3560-73 · 0,3–1,0 мм · 9–32 мм</p>
+      <a href="#request" class="button button-dark" data-inquiry>Обсудить закупку <svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 12h16m-6-6 6 6-6 6"/>
+        </svg>
+      </a>
+    </dialog>
+    <dialog id="article-dialog" aria-labelledby="article-title">
+      <button class="dialog-close" aria-label="Закрыть">
+        <svg class="icon icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18"/>
+        </svg>
+      </button>
+      <span class="demo-note">Пример материала</span>
+      <h2 id="article-title">
+      </h2>
+      <p>
+      </p>
+    </dialog>
+    <dialog id="news-archive" aria-labelledby="news-archive-title"><button class="dialog-close" aria-label="Закрыть">×</button><h2 id="news-archive-title">Новости и материалы</h2><p>Примеры материалов для будущих публикаций.</p><div class="news-archive-list"><button data-article="2"><span>Мы обновили сайт!</span><svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button><button data-article="0"><span>Как подготовить запрос на ленту</span><svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button><button data-article="1"><span>Несколько позиций — одна поставка</span><svg class="icon icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button></div></dialog>
+  </body>
+</html>
